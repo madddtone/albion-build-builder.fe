@@ -6,7 +6,7 @@ function Dashboard({ children })
     <>
       <main className="grid grid-cols-12 min-h-screen scroll-smooth">
         <SideBar />
-        <div className="col-span-12 lg:col-span-11">
+        <div className="col-span-12 lg:col-span-11 bg-gray-100">
           { children }
         </div>
       </main>
