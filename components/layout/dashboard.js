@@ -4,10 +4,12 @@ function Dashboard({ children })
 {
   return (
     <>
-      <main className="grid grid-cols-12 min-h-screen scroll-smooth">
-        <SideBar />
-        <div className="col-span-12 lg:col-span-11 bg-gray-100">
-          { children }
+      <main className="flex min-h-screen scroll-sm">
+        <div className="w-2/12 ">
+          <SideBar />
+        </div>
+        <div className="w-10/12 bg-gray-200">
+          {children}
         </div>
       </main>
     </>
