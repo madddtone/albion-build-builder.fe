@@ -1,6 +1,7 @@
 import Dashboard from '@/components/layout/dashboard';
 import { Table } from 'flowbite-react';
 import { Card } from 'flowbite-react';
+import Image from 'next/image'
 import React, { useState, useEffect } from 'react';
 
 function Skill() {
@@ -68,7 +69,7 @@ function Skill() {
 		<>
 			<div className='flex scroll-sm'>
 				<Card	className="w-6/12 bg-gray-100 mx-5 my-5" href="#">
-					//
+					test
 				</Card>
 
 				<Card	className="w-6/12 bg-gray-100 mx-5 my-5" href="#">
@@ -116,7 +117,7 @@ function Skill() {
 											className="bg-white dark:border-gray-700 dark:bg-gray-800"
 										>
 											<Table.Cell className="whitespace-nowrap font-medium text-gray-900 dark:text-white">
-												<img src={data.image_link} alt="Item Image" style={{ maxWidth: '100px' }} />
+												<Image src={data.image_link} alt="Item Image" width={100} height={100} priority={true}/>
 											</Table.Cell>
 											<Table.Cell>
 												{data.Name}
