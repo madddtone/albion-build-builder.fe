@@ -99,11 +99,6 @@ function ItemCard() {
 									<Table.HeadCell>
 										Category
 									</Table.HeadCell>
-									<Table.HeadCell>
-										<span className="sr-only">
-											Edit
-										</span>
-									</Table.HeadCell>
 								</Table.Head>
 								<Table.Body className="divide-y">
 									{(filteredItems.length === 0 ? itemsToDisplay : filteredItems).map((data, index) => (
@@ -119,14 +114,6 @@ function ItemCard() {
 											</Table.Cell>
 											<Table.Cell>
 												{data.Category}
-											</Table.Cell>
-											<Table.Cell>
-												<a
-													className="font-medium text-cyan-600 hover:underline dark:text-cyan-500"
-													href={`/edit/${data.T4ID}`}
-												>
-													Edit
-												</a>
 											</Table.Cell>
 										</Table.Row>
 									))}
