@@ -67,7 +67,7 @@ function ItemCard() {
   return (
 		<>
 			<div className='flex scroll-sm'>
-				<Card	className="w-12/12 bg-gray-100 mx-5 my-5" href="#">
+				<Card	className="bg-gray-100 mx-5 my-5" href="#">
 					<h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white px-5 uppercase">
 						<div>
 							Item List

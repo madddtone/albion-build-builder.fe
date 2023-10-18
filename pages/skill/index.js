@@ -14,8 +14,7 @@ function Skill() {
           test
         </Card>
 
-        <ItemCard>
-
+        <ItemCard className='w-6/12'>
         </ItemCard>
       </div>
     </>
